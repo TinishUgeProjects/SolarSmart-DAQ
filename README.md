@@ -82,3 +82,21 @@ while True:
 - Cloud dashboard (Thingspeak / Firebase / Grafana)
 - Mobile notifications for abnormal dips in output
 - ML model for anomaly detection
+
+## 🧠 What It Does:
+- Reads 5 sensor values every cycle from Arduino.
+- Stores each with timestamp.
+- Plots voltage, current, power, temp, and humidity on live graphs after logging.
+
+## 📌 How to Run:
+1. Connect your Arduino via USB and check the correct COM port.
+
+2. Install dependencies if not already:
+```cpp
+pip install matplotlib pyserial
+```
+
+3. Run the script:
+```cpp
+python solar_plotter.py
+```
