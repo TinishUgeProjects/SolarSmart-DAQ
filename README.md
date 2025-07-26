@@ -51,6 +51,7 @@ void loop() {
 
 ## 🐍 Python Data Logger
 
+```cpp
 import serial
 import pandas as pd
 from datetime import datetime
@@ -66,6 +67,7 @@ while True:
     df = pd.DataFrame(data, columns=['Timestamp', 'Voltage', 'Current', 'Power'])
     df.to_csv("solar_data.csv", index=False)
     print(f"{timestamp} | V: {voltage}V | I: {current}A | P: {power}W")
+```
 
 ## 📈 Data Analysis Capabilities
 
